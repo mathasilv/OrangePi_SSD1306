@@ -28,17 +28,11 @@ Now you need to connect the screen to your OrangePi following the next table:
 | SSD1306 | OrangePi | 
 |:-------:|:--------:|
 | VCC | 3.3v |
-| GND | 0v |
-| SDA | SDA.0 |
-| SDK | SCL.0 |
+| GND | GND  |
+| SDA | SDA  |
+| SDK | SCL  |
 
-The program **needs also a button to wake up the screen**, this button should be connected between the `GPIO.1` pin and the `0v` pin;
-
-
-To help with the wiring use the command `gpio readall` to get the pin layout of your OrangePi.
-
-![Wiring Image](https://github.com/andrejrcarvalho/OrangePi_SSD1306/raw/main/pictures/IMG_20210721_204430.jpg)
-NOTE: the extra wire from the button is to light up a LED inside the button
+The program **needs also a button to wake up the screen**, this button should be connected between the `WPi 13` pin and the `0v` pin;
 
 After this run the program:
 ```sh
@@ -49,7 +43,5 @@ You can add a cron job to run the program each time the system boots up with the
 ```
 @reboot /<path to the folder>/display.out
 ```
-![Wiring Image](https://github.com/andrejrcarvalho/OrangePi_SSD1306/raw/main/pictures/IMG_20210721_204525.jpg)
-
 [WiringPi]: <https://github.com/orangepi-xunlong/wiringOP>
 [armbian]: <https://www.armbian.com/>
