@@ -11,7 +11,7 @@ If you use the oficial debian image of oragepizero3, just run `sudo orangepi-con
 
 After that, clone the repository:
 ```sh
-git clone https://github.com/andrejrcarvalho/OrangePi_SSD1306.git
+https:/github.com/mathasilv/OrangePi_SSD1306.git
 ```
 
 
