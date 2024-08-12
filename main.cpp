@@ -5,13 +5,13 @@
 #include <wiringPi.h>
 #include <time.h>
 
-#define BUTTON_PIN 1
+#define BUTTON_PIN 13
 #define SCREEN_ON_TIME 10
 
 volatile sig_atomic_t stop = false;
 struct sigaction action;
 
-SSD1306 oled((char *)"/dev/i2c-0", 0x3C);
+SSD1306 oled((char *)"/dev/i2c-3", 0x3C);
 
 
 void sig_handler(int signo);
