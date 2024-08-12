@@ -6,7 +6,7 @@ Add a OLED display to your OrangePi with the system info!
 
 First you need to have the [WiringPi] installed and enable the I2C module.
 
-If you use [armbian], just run `sudo armbian-config` and go to System > Hardware select i2c0 and then Save;
+If you use the oficial debian image of oragepizero3, just run `sudo orangepi-config` and go to System > Hardware select ph-i2c3 and then Save;
 
 
 After that, clone the repository:
